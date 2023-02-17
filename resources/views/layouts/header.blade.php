@@ -25,6 +25,7 @@
                         <a class="nav-link" href="https://www.facebook.com/huynhbao.2606">Liên Hệ</a>
                     </li>
                 </ul>
+                <div style="width:20%;height:50px;position:relative; right: 250px"><iframe src="https://giphy.com/embed/sIfLhexLUqwik" width="100%" height="100%" style="position:absolute"></iframe></div>
                 <form action="" class="d-flex">
                     <input class="form-control border-right-0" id="search" name="search" type="text" placeholder="Nhập Giá Tiền Muốn Tìm" aria-label="search">
                     <button class="btn btn-outline-secondary border-left-0" type="submit">

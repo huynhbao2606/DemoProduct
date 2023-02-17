@@ -19,7 +19,7 @@
                 <th class="text-center">{{$index}}</th>
                 <td class="text-center">{{$ds -> TenSP}}</td>
                 <td class="text-center">{{number_format($ds -> Gia,0) }}đ</td>
-                <td><img class="card-img-top" src="{{asset('uploads/'.$ds -> Hinh)}}" alt="Chưa Thêm Hình" width="50" height="50"></td>
+                <td><img class="card-img-top" src="{{asset('uploads/'.$ds -> Hinh)}}" alt="Lỗi" width="50" height="50"></td>
                 <td class="text-center">{{$ds -> NgayTao}}</td>
                 <td class="text-center">{{$ds -> TenLoai}}</td>
             </tr>
