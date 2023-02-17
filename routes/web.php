@@ -20,6 +20,5 @@ Route::get('/', [SanPhamController::class, 'index']);
 Route::get('/list-cate/{MaLoai}', [SanPhamController::class, 'listCate']);
 Route::get('/all', [SanPhamController::class, 'all']);
 Route::get('/add-product',[SanPhamController::class,'addproduct']);
-Route::post('/add-product-post',[SanPhamController::class,'addproductpost']);
-Route::get('/search', [SanPhamController::class, 'search']);
+Route::post('/add-product',[SanPhamController::class,'addproductpost']);
 

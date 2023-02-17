@@ -1,27 +1,27 @@
 @extends('layouts.master')
 @section("main")
-    <h4>Danh Sách Sản Phẩm</h4>
+    <h4 class="fw-bolder">Danh Sách Sản Phẩm</h4>
     <hr>
     <table class="table table-bordered border-dark table-hover">
         <thead>
         <tr>
-            <th scope="col">STT</th>
-            <th scope="col">Tên Sản Phẩm</th>
-            <th scope="col">Giá</th>
-            <th scope="col">Hình</th>
-            <th scope="col">Ngày Tạo</th>
-            <th scope="col">Mã Loại</th>
+            <th class="text-center" scope="col">STT</th>
+            <th class="text-center" scope="col">Tên Sản Phẩm</th>
+            <th class="text-center" scope="col">Giá</th>
+            <th class="text-center" scope="col">Hình</th>
+            <th class="text-center" scope="col">Ngày Tạo</th>
+            <th class="text-center" scope="col">Tên Loại</th>
         </tr>
         </thead>
         <tbody>
         @foreach($all as $index => $ds)
             <tr>
-                <th>{{$index}}</th>
-                <td>{{$ds -> TenSP}}</td>
-                <td>{{number_format($ds -> Gia,0) }}đ</td>
+                <th class="text-center">{{$index}}</th>
+                <td class="text-center">{{$ds -> TenSP}}</td>
+                <td class="text-center">{{number_format($ds -> Gia,0) }}đ</td>
                 <td><img class="card-img-top" src="{{asset('uploads/'.$ds -> Hinh)}}" alt="Chưa Thêm Hình" width="50" height="50"></td>
-                <td>{{$ds -> NgayTao}}</td>
-                <td>{{$ds -> MaLoai}}</td>
+                <td class="text-center">{{$ds -> NgayTao}}</td>
+                <td class="text-center">{{$ds -> TenLoai}}</td>
             </tr>
         @endforeach
         </tbody>

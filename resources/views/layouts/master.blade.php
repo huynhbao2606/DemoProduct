@@ -30,5 +30,10 @@
 <footer class="row mt-auto bg-dark bg">
   @include("layouts.footer")
 </footer>
+<script>
+    // setInputFilter(document.getElementById("search"), function(value) {
+    //     return /^\d*\.?\d*$/.test(value); // Allow digits and '.' only, using a RegExp.
+    // });
+</script>
 </body>
 </html>
